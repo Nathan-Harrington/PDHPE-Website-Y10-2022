@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Road Safety Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src = "main.js"></script>
+</head>
+<body class = "text-center">
+<!--***********************************************************************NAVBAR CODE**************************************************************************-->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <a class="navbar-brand text-white" href="home.html">Home</a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active text-white" href="index.html">Reaction Test<span class="sr-only">(current)</span></a>
+      </div>
+    </div>
+</nav>
+
+<!--***********************************************************************WEBSITE CODE**************************************************************************-->
+    <h1>Test your reaction</h1>
+    <p>Click on boxes and circles as quick as possible to see your reaction time.</p>
+
+    <!--Starts Game--> 
+    <div class="content">
+
+        <!--Display Reaction Time-->
+        <button onclick = "startGame()" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Start Game</button>
+    </div>
+
+    <!--Reaction Game Shape-->
+    <div id = "shape" onclick = "disappearOnClick()"></div>
+
+    <!--Text to display at end of Game-->
+    <div id = "endCondition" class = "justify-content-center">
+        <span id = "endText">Game Ended</span>
+        <button id = "dismissButton" onclick = "dismissButton()" class = "btn btn-danger mx-auto" >Dismiss</button>
+    </div>
+  
+    <!--Fact about Road Safety to display after game-->
+        <div id = "fact1"><p>This is an interesting fact about road safety</p></div>
+</body>
+</html>

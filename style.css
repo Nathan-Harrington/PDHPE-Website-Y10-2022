@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    color: purple;
+    text-align: center;
+    margin: auto;
+}
+
+#shape{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    position: relative;
+    box-shadow: 0 0 20px #888888;
+    display: none;
+}
+
+#shape:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#endCondition {
+    width: 100%;
+    height: 200px;
+    background-color: greenyellow;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    padding-top: 70px;
+    display: none;
+    margin-top: 20px;
+}
+
+#dismissButton {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+ #fact1 {
+    display: none;
+ }
