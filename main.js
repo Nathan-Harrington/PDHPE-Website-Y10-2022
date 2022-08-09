@@ -60,6 +60,7 @@ function disappearOnClick() {
     appearAfterDelay();
 }
 function averageCalculator() {
+
     for (i of averageTimes) {
         sum += i;
     }
@@ -67,6 +68,7 @@ function averageCalculator() {
     average = average.toFixed(3);
     document.getElementById("endText").innerHTML = "The game has ended. Your average reaction time is: " + average + " secs\n"; 
     document.getElementById("dismissButton").style.display = "block"
+    sum = 0;
 }
 function dismissButton() {
     document.getElementById("endCondition").style.display = "none"
