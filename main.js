@@ -36,9 +36,19 @@ function appearAfterDelay() {
     }else{
         document.getElementById("endCondition").style.display = "block";
         //Calculates Average
-        averageCalculator();
+        if(Math.Random() < 0.33333){
+            document.getElementById("fact1").style.display = "block";
+        }
+        else if(Math.Random() < 0.666666) {
+            document.getElementById("fact2").style.display= "block";
+        }
+        else{
+            document.getElementById("fact3").style.display= "block";
+        }
     }
-}
+        averageCalculator();
+
+    }
 function startGame(){
     makeShapeAppear();
     document.getElementById("endCondition").style.display = "none";
@@ -73,4 +83,7 @@ function averageCalculator() {
 function dismissButton() {
     document.getElementById("endCondition").style.display = "none"
     document.getElementById("dismissButton").style.display = "none"
+    document.getElementById("fact1").style.display = "none"
+    document.getElementById("fact2").style.display = "none"
+    document.getElementById("fact3").style.display = "none"
 }
