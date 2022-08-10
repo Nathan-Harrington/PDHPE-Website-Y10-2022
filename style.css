@@ -1,7 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: whitesmoke;
-    color: purple;
     text-align: center;
     margin: auto;
 }
@@ -53,5 +52,16 @@ body{
  }
 
  #roadSafety{
-    width: 800px;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border: 5px solid #FFFF00;
+    padding-top: 20px;
+    box-shadow: 2px 3px #1B1b1b;
+ }
+ #safeSpeed{
+    width:50%
+ }
+ #AandD{
+    width: 50%
  }
