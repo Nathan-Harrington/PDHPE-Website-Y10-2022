@@ -58,10 +58,17 @@ body{
     border: 5px solid #FFFF00;
     padding-top: 20px;
     box-shadow: 2px 3px #1B1b1b;
+    height: 800px;
  }
  #safeSpeed{
-    width:50%
+    float: left;
  }
  #AandD{
-    width: 50%
+    float: right;
+ }
+ #Fatigue{
+   float:left;
+ }
+ #Mobile{
+   float: right;
  }
