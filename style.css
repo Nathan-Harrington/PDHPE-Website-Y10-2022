@@ -72,3 +72,9 @@ body{
  #Mobile{
    float: right;
  }
+ .speedtext{
+   background-color: whitesmoke;
+   width: 800px;
+   height: 2400px;
+   margin: auto;
+ }
