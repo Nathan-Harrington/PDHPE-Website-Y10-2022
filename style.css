@@ -75,12 +75,27 @@ body{
  .speedtext{
    background-color: whitesmoke;
    width: 800px;
-   height: 2400px;
+   height: 2150px;
    margin: auto;
  }
  .dangtext{
    background-color: whitesmoke;
    width: 800px;
-   height: 2400px;
+   height: 1125px;
    margin: auto;
+ }
+ .sharetext{
+   background-color: whitesmoke;
+   width: 800px;
+   height: 1125px;
+   margin: auto;
+ }
+ .column{
+   float: left;
+   width: 33.33%;
+ }
+ .row::after {
+   content: "";
+   clear: both;
+   display: table;
  }
