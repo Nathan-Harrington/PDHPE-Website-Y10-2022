@@ -75,7 +75,7 @@ body{
  .speedtext{
    background-color: whitesmoke;
    width: 800px;
-   height: 2150px;
+   height: 2500px;
    margin: auto;
  }
  .dangtext{
@@ -99,3 +99,19 @@ body{
    clear: both;
    display: table;
  }
+ table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
