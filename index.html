@@ -1,66 +1,55 @@
 <!DOCTYPE html>
-<html lang = "en">
-<head>
-    <meta charset = "UTF-8">
-    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Road Safety Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src = "main.js"></script>
-</head>
-<body class = "text-center">
-<!--***********************************************************************NAVBAR CODE**************************************************************************-->
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-    <a class="navbar-brand text-white" href="home.html">Home</a>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link active text-white" href="index.html">Reaction Test<span class="sr-only">(current)</span></a>
-        </div>
-        <div class = "navbar-nav">
-            <a class="nav-item nav-link active text-white" href="speeding.html">Speeding</a>
-        </div>
-        <div class = "navbar-nav">
-            <a class="nav-item nav-link active text-white" href="dangerousbehaviours.html">Dangerous Behaviours</a>
-        </div>
-        <div class = "navbar-nav">
-            <a class="nav-item nav-link active text-white" href="sharingtheroad.html">Sharing the Road</a>
-        </div>
-        <div class = "navbar-nav">
-            <a class="nav-item nav-link active text-white" href="references.html">References</a>
-        </div>  
-    <div>
-</nav>
-
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Road Safety Website</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src = "main.js"></script>
+    </head>
+    <body>
+        <!--***********************************************************************NAVBAR CODE**************************************************************************-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <a class="navbar-brand text-white" href="home.html">Home<span class="sr-only">(current)</span></a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active text-white" href="index.html">Reaction Test</a>
+                </div>
+                <div class = "navbar-nav">
+                    <a class="nav-item nav-link active text-white" href="speeding.html">Speeding</a>
+                </div>
+                <div class = "navbar-nav">
+                    <a class="nav-item nav-link active text-white" href="dangerousbehaviours.html">Dangerous Behaviours</a>
+                </div>
+                <div class = "navbar-nav">
+                    <a class="nav-item nav-link active text-white" href="sharingtheroad.html">Sharing the Road</a>
+                </div>
+                <div class = "navbar-nav">
+                    <a class="nav-item nav-link active text-white" href="references.html">References</a>
+                </div>
+            <div>
+        </nav>
 <!--***********************************************************************WEBSITE CODE**************************************************************************-->
-    <h1>Test your reaction</h1>
-    <p>Click on boxes and circles as quick as possible to see your reaction time.</p>
-
-    <!--Starts Game--> 
-    <div class="content">
-
-        <!--Display Reaction Time-->
-        <button onclick = "startGame()" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Start Test</button>
-    </div>
-
-    <!--Reaction Game Shape-->
-    <div id = "shape" onclick = "disappearOnClick()"></div>
-
-    <!--Text to display at end of Game-->
-    <div id = "endCondition" class = "justify-content-center">
-        <span id = "endText">Game Ended</span>
-        <button id = "dismissButton" onclick = "dismissButton()" class = "btn btn-danger mx-auto" >Dismiss</button>
-    </div>
-  
-    <!--Fact about Road Safety to display after game-->
-        <div id = "fact1">
-            <p>This is an interesting fact about road safety</p>
+        <div id = "roadSafety">
+            <h2>Road Safety Coded and Written by Nathan Harrington</h2>
+            <h3>Safe Speeds</h3>
+            <p>It is imperative that when you are on the road you follow the posted speed limits. To learn more about ensuring safety for yourself and others around you click <a href = "speeding.html"> here</a>. </p>
+            <img src = "images/speedimg3.png" style = "width: 400px; padding-bottom: 20px;">
+            <h3>Dangerous Behaviours</h3>
+            <p>When driving the behaviours of you and passengers are substantive in increasing or decreasing your likelihood of a crash. To learn more about dangerous behaviours when driving click <a href = "dangerousbehaviours.html"> here</a>.</p>
+            <img src = "images/dangbehaviour1.jpg" style = "width: 400px; padding-bottom: 20px;">
+            <h3>Sharing the Road</h3>
+            <p>The road is full of various vehicles and people navigating. To pursue further information on this topic click <a href = "sharingtheroad.html"> here</a>.</p>
+            <img src = "images/shareroad1.jpg" style = "width: 300px; padding-bottom: 20px;">
         </div>
-        <div id = "fact2">
-            <p>This is another interesting fact about road safety</p>
-        </div>
-        <div id = "fact3">
-            <p>This is a final interesting fact about road safety</p>
-        </div>
-</body>
+    </body>
 </html>
+<!--            <span id = "safeSpeed"><h3>Safe Speeds</h3><p>Lorem Ipsum</p></span>
+            <span id = "Mobile"><h3>Mobile Phones</h3><p>Lorem Ipsum</p></span>
+            <span id = "Fatigue"><h3>Fatigue</h3><p>Lorem Ipsum</p></span>
+            <h3 id = "Behaviour">Dangerous Behaviours</h3>
+            <h3 id = "Safe Vehicle">Safe Vehicles</h3>
+            <h3 id = "Sharing">Share the Road</h3>
+            <h3 id = "MedFitness">Medical Fitness</h3>-->
